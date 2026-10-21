@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_standard" name="shell-type"/>
+  <title>GONGO - Verified Partner Vehicle Rental Marketplace</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Script (Tailwind Config & Interactive Behaviors) -->
+  <script src="script.js"></script>
+
+  <!-- Tally Forms Embed Script -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased">
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl border-b border-border-subtle"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><a href="#hero" class="flex items-center gap-3 shrink-0 group"><img alt="GONGO Brand Wordmark" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1Vbo8UqrzU84KueIKggp0dCIotkrMNDJsIcsgl3fU_zCHBg5cRKFqQ5b8NAE_52o_J-BE9R-vzcnL4sl4rIkX_CGuUwLegMPWFhE_xGzJMWiM2MgjEjddqAlV2v7pD4owUOdZ-WCc3MVLI8WHPSvq-gTnQqkx5ihhCfYccaK0dg0b_FxVBk0i6Jou7B91bdhZ2ma2_qs9AtTj6vQckPwBxWzouF-uFmZjK2wVPpQhot"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold">GONGO</span></a><nav class="hidden xl:flex items-center gap-6" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold hover:text-brand-orange-hover" data-path="home" href="#hero">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#how-it-works">How It Works</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="categories" href="#categories">Categories</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="why-gongo" href="#why-gongo">Why GONGO</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="for-partners" href="#partners">For Partners</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="franchise" href="#franchise">Franchise</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#about">About</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#contact">Contact</a></nav><div class="flex items-center gap-3 shrink-0"><button class="hidden sm:inline-flex items-center justify-center px-4 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-lg hover:bg-surface-container" type="button" onclick="openLoginModal()">Login</button><a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-primary-container text-on-primary hover:bg-brand-orange-hover font-label-md text-label-md font-semibold transition-all shadow-sm" data-path="become-partner" href="#partner-form-section">Become a Partner</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLoginModal()" title="Account"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="xl:hidden p-2 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container transition-colors" type="button" onclick="toggleMobileMenu()"><span id="mobile-menu-icon" class="material-symbols-outlined text-[24px]">menu</span></button></div></div><div id="mobile-nav" class="hidden xl:hidden bg-surface-pure border-t border-border-subtle shadow-2xl px-6 py-6 max-h-[85vh] overflow-y-auto"><nav class="flex flex-col space-y-2"><a class="px-3 py-2.5 rounded-xl text-primary font-bold hover:bg-surface-container transition-colors flex items-center justify-between" href="#hero" onclick="toggleMobileMenu()"><span>Home</span><span class="material-symbols-outlined text-[18px]">home</span></a><a class="px-3 py-2.5 rounded-xl text-on-surface font-semibold hover:bg-surface-container transition-colors flex items-center justify-between" href="#how-it-works" onclick="toggleMobileMenu()"><span>How It Works</span><span class="material-symbols-outlined text-[18px]">alt_route</span></a><a class="px-3 py-2.5 rounded-xl text-on-surface font-semibold hover:bg-surface-container transition-colors flex items-center justify-between" href="#categories" onclick="toggleMobileMenu()"><span>Categories</span><span class="material-symbols-outlined text-[18px]">two_wheeler</span></a><a class="px-3 py-2.5 rounded-xl text-on-surface font-semibold hover:bg-surface-container transition-colors flex items-center justify-between" href="#why-gongo" onclick="toggleMobileMenu()"><span>Why GONGO</span><span class="material-symbols-outlined text-[18px]">verified</span></a><a class="px-3 py-2.5 rounded-xl text-on-surface font-semibold hover:bg-surface-container transition-colors flex items-center justify-between" href="#partners" onclick="toggleMobileMenu()"><span>For Partners</span><span class="material-symbols-outlined text-[18px]">handshake</span></a><a class="px-3 py-2.5 rounded-xl text-on-surface font-semibold hover:bg-surface-container transition-colors flex items-center justify-between" href="#franchise" onclick="toggleMobileMenu()"><span>Franchise</span><span class="material-symbols-outlined text-[18px]">storefront</span></a><a class="px-3 py-2.5 rounded-xl text-on-surface font-semibold hover:bg-surface-container transition-colors flex items-center justify-between" href="#about" onclick="toggleMobileMenu()"><span>About &amp; Firm Details</span><span class="material-symbols-outlined text-[18px]">info</span></a><a class="px-3 py-2.5 rounded-xl text-on-surface font-semibold hover:bg-surface-container transition-colors flex items-center justify-between" href="#contact" onclick="toggleMobileMenu()"><span>Contact Desk</span><span class="material-symbols-outlined text-[18px]">contact_support</span></a></nav><div class="mt-5 pt-4 border-t border-border-subtle flex flex-col gap-3"><a class="w-full py-3 rounded-xl bg-primary-container text-on-primary hover:bg-brand-orange-hover font-label-md text-label-md font-semibold text-center transition-all shadow-sm" href="#partner-form-section" onclick="toggleMobileMenu()">Become a Rental Partner</a><div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between"><div><p class="text-[11px] text-text-muted uppercase font-bold tracking-wider">Registered Mobile / Hotline</p><a href="tel:+917898114878" class="text-sm font-bold text-on-surface hover:text-primary-container">+91 78981 14878</a></div><a href="tel:+917898114878" class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[18px]">call</span></a></div><div class="px-3 py-2 text-xs text-text-muted">Business Firm: <strong class="text-on-surface">BHARAT-MILK</strong><br/>Care Email: <a href="mailto:info@gongobike.com" class="text-primary hover:underline">info@gongobike.com</a></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-16 lg:pt-14 lg:pb-24" id="hero">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Hero Left Content -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-6">
+<!-- Marketplace Trust Badge -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container border-0 shadow-sm text-on-surface">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label-sm text-label-sm tracking-wide text-on-surface-variant font-semibold">Verified Partner Marketplace · Zero Vehicle Ownership</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-display-hero-mobile lg:text-display-hero tracking-tight text-on-surface font-extrabold max-w-2xl">
+          Rent the Ride. <br/>
+<span class="text-primary-container">Own the Journey.</span>
+</h1>
+<!-- Supporting Value Copy -->
+<p class="font-body-lg text-body-lg text-text-muted max-w-xl">
+          Discover verified bikes and cars from trusted rental partners near you. Book easily, pay securely, and ride with unmatched confidence across India.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-primary-container text-on-primary hover:bg-brand-orange-hover font-label-md text-label-md font-semibold transition-all shadow-md hover:-translate-y-0.5" href="#categories">
+<span>Explore Vehicles</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors shadow-sm" href="#partners">
+            Become a Partner
+          </a>
+</div>
+<!-- Fast Inline Ride Finder Widget -->
+<div class="w-full mt-4 p-4 lg:p-5 rounded-2xl bg-surface-pure shadow-md">
+<div class="flex items-center gap-2 mb-3.5">
+<span class="material-symbols-outlined text-primary-container text-[20px]">tune</span>
+<span class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Quick Vehicle Finder</span>
+</div>
+<form class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" id="hero-quick-search" onsubmit="handleQuickSearch(event)">
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-text-muted mb-1" for="v-type">Vehicle Type</label>
+<select class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-pure focus:ring-2 focus:ring-primary-container transition-all" id="v-type">
+<option value="all">All Categories</option>
+<option value="bikes">Motorcycles</option>
+<option value="scooters">Scooters &amp; Mopeds</option>
+<option value="cars">Cars &amp; SUVs</option>
+<option value="ev">Electric Vehicles</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-text-muted mb-1" for="city-select">City / Zone</label>
+<select class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-pure focus:ring-2 focus:ring-primary-container transition-all" id="city-select">
+<option value="bhopal">Bhopal, MP</option>
+<option value="indore">Indore, MP</option>
+<option value="delhi">Delhi NCR</option>
+<option value="pune">Pune, MH</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-text-muted mb-1" for="pickup-date">Pickup Date</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-pure focus:ring-2 focus:ring-primary-container transition-all" id="pickup-date" type="date" value="2026-04-15"/>
+</div>
+<div class="flex items-end">
+<button class="w-full h-11 px-4 rounded-lg bg-primary-container hover:bg-brand-orange-hover text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-all shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[18px]">search</span>
+<span>Find Rides</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Hero Right Dynamic Visual Frame -->
+<div class="lg:col-span-5 relative w-full">
+<div class="relative w-full aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] rounded-3xl overflow-hidden shadow-xl bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="A modern matte black SUV and an adventure touring motorcycle parked on an asphalt viewpoint overlooking a glowing metropolitan city skyline at twilight. Soft cinematic golden hour lighting, clean automotive styling with high contrast and urban mobility vibe matching GONGO colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-RyWKlFMqsuw3Vhw2eedk-k3itnIKHksiWqxvAYL4LWNcOSkV8We-knB6I5VuRpj3CcLiohA_gQ2beeiVoF8S-FuuOIDQNNXaHT4ykq21g6V3m3lAvPnNuSYMsVGT6gx6Dbqgnw9VkhlAa674erBQRD2w7bCdgNd59Yz4h4DK_AdqLArYW_MOVOn8JUe_i0tl6YLrCLXMvFGodBwzsXU3fsQSOAoMDQ1t8u9FGy2L"/>
+<!-- Subtle Dark Scrim Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+<!-- Top-Left Floating Badge -->
+<div class="absolute top-4 left-4 backdrop-blur-md bg-surface/90 rounded-xl px-3.5 py-2 shadow-md flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+<div>
+<p class="font-label-sm text-label-sm font-bold text-on-surface leading-none">500+ Vehicles</p>
+<p class="text-[10px] text-text-muted font-medium">Available nearby</p>
+</div>
+</div>
+<!-- Bottom-Right Floating Badge -->
+<div class="absolute bottom-4 right-4 backdrop-blur-md bg-surface/90 rounded-xl px-3.5 py-2 shadow-md flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-brand-orange-subtle flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm font-bold text-on-surface leading-none">100+ Verified Partners</p>
+<p class="text-[10px] text-text-muted font-medium">Inspected &amp; Approved</p>
+</div>
+</div>
+<!-- Bottom-Left Floating Micro-Trust Badge -->
+<div class="absolute bottom-4 left-4 hidden sm:flex backdrop-blur-md bg-inverse-surface/85 text-inverse-on-surface rounded-xl px-3 py-1.5 shadow-md items-center gap-1.5">
+<span class="material-symbols-outlined text-emerald-400 text-[16px]">lock_clock</span>
+<span class="text-[11px] font-medium tracking-tight">Instant Online Booking</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. TRUST & STATS STRIP -->
+<section class="w-full bg-surface-container-low py-10">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-6 lg:gap-8 items-center text-center">
+<div class="flex flex-col items-center">
+<span class="font-stat-display text-stat-display text-on-surface font-extrabold tracking-tight">500+</span>
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider mt-1">Active Vehicles</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-stat-display text-stat-display text-on-surface font-extrabold tracking-tight">100+</span>
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider mt-1">Rental Partners</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-stat-display text-stat-display text-on-surface font-extrabold tracking-tight">10+</span>
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider mt-1">Active Cities</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-stat-display text-stat-display text-on-surface font-extrabold tracking-tight">10,000+</span>
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider mt-1">Happy Riders</span>
+</div>
+<div class="col-span-2 md:col-span-1 flex flex-col items-center">
+<div class="flex items-center gap-1 text-primary-container">
+<span class="font-stat-display text-stat-display font-extrabold tracking-tight">4.9</span>
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider mt-1">Partner Rating</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. HOW GONGO WORKS -->
+<section class="w-full max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-24" id="how-it-works">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange-subtle text-primary font-label-sm text-label-sm font-semibold mb-3">
+        Engineered for Speed
+      </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold tracking-tight">
+        Your Ride, Simplified.
+      </h2>
+<p class="font-body-md text-body-md text-text-muted mt-3">
+        From transparent search to seamless return, GONGO removes paperwork friction at every milestone.
+      </p>
+</div>
+<!-- 4-step horizontal interconnected layout -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Step 01 -->
+<div class="group relative flex flex-col p-6 rounded-2xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center justify-between mb-6">
+<span class="font-stat-display text-stat-display text-primary-container font-extrabold">01</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Search</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+          Find bikes and cars available near your location with genuine photos and transparent hourly or daily pricing.
+        </p>
+</div>
+<!-- Step 02 -->
+<div class="group relative flex flex-col p-6 rounded-2xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center justify-between mb-6">
+<span class="font-stat-display text-stat-display text-primary-container font-extrabold">02</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">compare_arrows</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Choose</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+          Compare models, engine specs, partner store reviews, security deposit options, and safety certifications.
+        </p>
+</div>
+<!-- Step 03 -->
+<div class="group relative flex flex-col p-6 rounded-2xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center justify-between mb-6">
+<span class="font-stat-display text-stat-display text-primary-container font-extrabold">03</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">credit_card</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Book</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+          Select customized rental slots (hourly, weekend or monthly) and confirm with secure instant online checkout.
+        </p>
+</div>
+<!-- Step 04 -->
+<div class="group relative flex flex-col p-6 rounded-2xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center justify-between mb-6">
+<span class="font-stat-display text-stat-display text-primary-container font-extrabold">04</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">sports_motorsports</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Ride</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+          Pick up your cleaned, pre-inspected ride from the verified hub with zero paperwork friction. Ride and easily return.
+        </p>
+</div>
+</div>
+</section>
+<!-- 4. VEHICLE CATEGORIES -->
+<section class="w-full bg-surface-container-low py-20 lg:py-24" id="categories">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange-subtle text-primary font-label-sm text-label-sm font-semibold mb-2">
+            Verified Fleet Portfolio
+          </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold tracking-tight">
+            Find Your Perfect Ride
+          </h2>
+<p class="font-body-md text-body-md text-text-muted mt-2">
+            Curated fleets from top verified fleet owners and local mobility hubs.
+          </p>
+</div>
+<!-- Filter Pill Controls -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1" id="category-filter-pills">
+<button class="px-4 py-2 rounded-xl text-xs font-semibold bg-primary-container text-on-primary shadow-sm whitespace-nowrap cat-pill active" onclick="filterCategory('all', this)" type="button">All Categories</button>
+<button class="px-4 py-2 rounded-xl text-xs font-semibold bg-surface-pure text-on-surface hover:bg-surface-container whitespace-nowrap cat-pill" onclick="filterCategory('bikes', this)" type="button">Bikes</button>
+<button class="px-4 py-2 rounded-xl text-xs font-semibold bg-surface-pure text-on-surface hover:bg-surface-container whitespace-nowrap cat-pill" onclick="filterCategory('scooters', this)" type="button">Scooters</button>
+<button class="px-4 py-2 rounded-xl text-xs font-semibold bg-surface-pure text-on-surface hover:bg-surface-container whitespace-nowrap cat-pill" onclick="filterCategory('cars', this)" type="button">Cars</button>
+<button class="px-4 py-2 rounded-xl text-xs font-semibold bg-surface-pure text-on-surface hover:bg-surface-container whitespace-nowrap cat-pill" onclick="filterCategory('ev', this)" type="button">Electric</button>
+</div>
+</div>
+<!-- 4 High-Polish Category Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="category-cards-grid">
+<!-- Bikes Card -->
+<div class="vehicle-card group flex flex-col rounded-2xl bg-surface-pure shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" data-category="bikes">
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A rugged touring Royal Enfield motorcycle parked against an open scenic mountain trail during golden hour daylight. Crisp detail on chrome exhaust, leather seat, and dual knobby tires with zero background distraction." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Jpnu-wNJcJ4Wpex1_Az0rSvM9fVaar-FoCR1PNNR-1DxsmDjBjrO1kz1jbayN1zLO4hISl1cx8KYf8c3_wXqLUO2Jie9iAzolHmW-tsg_ikEfruTOLjcSvDdiwgGYLMM09yOb6bghAwIrU9juuC-fXK9N_pxZWr0mssxnw01v0cWl7Fznq_2XU32qGSVcg6MNe0O5mSxpQTe7k05RIPns0gBDXroWwbaziImj5uX"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface-pure/95 font-label-sm text-label-sm font-semibold text-on-surface shadow-xs">Bikes</span>
+</div>
+<div class="p-5 flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-2">
+<span class="text-xs text-text-muted font-medium">Royal Enfield · KTM · Pulsar</span>
+<span class="font-label-sm text-label-sm font-bold text-primary-container">from ₹499/day</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Motorcycles &amp; Cruisers</h3>
+<p class="font-body-sm text-body-sm text-text-muted">High-displacement tourers, city commuters, and adventure bikes for weekend escapes.</p>
+</div>
+<button type="button" onclick="selectCategory('bikes')" class="w-full mt-5 pt-4 border-t border-border-subtle/60 flex items-center justify-between text-on-surface group-hover:text-primary-container transition-colors text-left">
+<span class="font-label-md text-label-md font-semibold">View Available Bikes</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Scooters Card -->
+<div class="vehicle-card group flex flex-col rounded-2xl bg-surface-pure shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" data-category="scooters">
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean modern Honda Activa and TVS Jupiter scooter parked in an urban city avenue with warm evening light. Pristine paint finish, clean city road setting, modern metropolitan transit feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-kYBkSheN-sBMHIttcmVtQ4jbmPqFHAr76JznKa4koyQoiPJi37ShlW5fcc4XGQQoVUoth8HbX7gFy-JxvcR76ON8moxb6jZ0aH8vgp5gZDaoRXY4oQ4pGe5LO4AlU7YgHMXA4PidNWAmKtPY5qWj7raGhMcR-gXtD1t2UuyuTaUaEaDQSnTt7LXBYaXAk1XDCgn2Mxj8zqwFWNmV8gKpgR_p7M3jBwQpd7BBizXq"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface-pure/95 font-label-sm text-label-sm font-semibold text-on-surface shadow-xs">Scooters</span>
+</div>
+<div class="p-5 flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-2">
+<span class="text-xs text-text-muted font-medium">Activa · Jupiter · Access</span>
+<span class="font-label-sm text-label-sm font-bold text-primary-container">from ₹299/day</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">City Gearless Scooters</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Effortless mobility designed for tight city traffic, quick campus runs, and errands.</p>
+</div>
+<button type="button" onclick="selectCategory('scooters')" class="w-full mt-5 pt-4 border-t border-border-subtle/60 flex items-center justify-between text-on-surface group-hover:text-primary-container transition-colors text-left">
+<span class="font-label-md text-label-md font-semibold">View Available Scooters</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Cars Card -->
+<div class="vehicle-card group flex flex-col rounded-2xl bg-surface-pure shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" data-category="cars">
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sleek compact SUV crossover car parked in front of a modern glass office pavilion in soft morning light. Clean metallic grey body, alloy wheels, premium urban automotive aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGbQizs66pvkBtrYad3iPWoy_54pvJrMqI0_gbqtO-T8PL-N6sGedpms-B_2oZAKH_yix1gS1sCd6sWk1_w1qi5Nv4ikdrjG2cvLXxVGRDB4TcEs0HBX5x_kVCBav2j1YlrIJjKrPGDvBnSWcVn-FNYJiTUDnaXUt9WowD8j9IZxLMn0oqFwpjqUkin1X6duosX-2z3SDUJzx4zjELNyaXFpZCPGsoUsNxesbMKCyu"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface-pure/95 font-label-sm text-label-sm font-semibold text-on-surface shadow-xs">Cars</span>
+</div>
+<div class="p-5 flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-2">
+<span class="text-xs text-text-muted font-medium">Swift · Creta · Nexon</span>
+<span class="font-label-sm text-label-sm font-bold text-primary-container">from ₹1,299/day</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Cars &amp; Compact SUVs</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Spacious sedans, efficient hatchbacks, and rugged SUVs with unlimited kilometer packages.</p>
+</div>
+<button type="button" onclick="selectCategory('cars')" class="w-full mt-5 pt-4 border-t border-border-subtle/60 flex items-center justify-between text-on-surface group-hover:text-primary-container transition-colors text-left">
+<span class="font-label-md text-label-md font-semibold">View Available Cars</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Electric Vehicles Card -->
+<div class="vehicle-card group flex flex-col rounded-2xl bg-surface-pure shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" data-category="ev">
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A futuristic electric scooter and compact electric hatchback plugged into a sleek charging station in an eco-friendly tech park. Minimalist design, clean green energy ambiance, sharp lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA0RfS1vjmYI68_E_eDDveTTLG3l70Q-6guueDaPjjvM7krL112Re5N7e9C9kr38FZFzqYtAE1x8y4BqAqkFQzf8psM8WvL0OV58rmwFB7rOuXWjMp3awj-11wHTuLLsxWP9JzRG_a-HNJnVzZFbLamWM3x3H8E8S4cp-SnFphBNBB36J05yvQ1Rb5FlJag-1rShQU_1t8ReB3e6XA95LTH265YIvmUtL4_L-1iEXb"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-surface-pure/95 font-label-sm text-label-sm font-semibold text-on-surface shadow-xs">EV Fleet</span>
+</div>
+<div class="p-5 flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-baseline justify-between mb-2">
+<span class="text-xs text-text-muted font-medium">Ather · Ola Electric · Tiago EV</span>
+<span class="font-label-sm text-label-sm font-bold text-primary-container">from ₹349/day</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Electric Vehicles</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Silent, zero-emission electric mobility with complimentary charging station access.</p>
+</div>
+<button type="button" onclick="selectCategory('ev')" class="w-full mt-5 pt-4 border-t border-border-subtle/60 flex items-center justify-between text-on-surface group-hover:text-primary-container transition-colors text-left">
+<span class="font-label-md text-label-md font-semibold">View Available EVs</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. WHY GONGO (3x2 FEATURE GRID) -->
+<section class="w-full max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-24" id="why-gongo">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold mb-3">
+        Built on Absolute Trust
+      </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold tracking-tight">
+        Why Ride With GONGO?
+      </h2>
+<p class="font-body-md text-body-md text-text-muted mt-3">
+        We eliminate the ambiguity of traditional street rentals with standardized quality and institutional security.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+<!-- Feature 1 -->
+<div class="p-6 rounded-2xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-brand-orange-subtle text-primary-container flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[26px]">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Verified Partners</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+          Book exclusively from rental hubs audited through our 7-point legal, vehicle maintenance, and customer-satisfaction standards.
+        </p>
+</div>
+<!-- Feature 2 -->
+<div class="p-6 rounded-2xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-on-surface flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[26px]">receipt_long</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Transparent Pricing</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+          Zero surprise charges at the desk. See your exact fuel policy, kilometer package, and refundable security deposit upfront.
+        </p>
+</div>
+<!-- Feature 3 -->
+<div class="p-6 rounded-2xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-brand-orange-subtle text-primary-container flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[26px]">security</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Secure Payments</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+          Bank-grade 256-bit encrypted checkout. Support for UPI, debit/credit cards, and automated instant deposit returns.
+        </p>
+</div>
+<!-- Feature 4 -->
+<div class="p-6 rounded-2xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-on-surface flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[26px]">directions_car</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Wide Selection</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+          Access diverse mobility options: agile city mopeds, Royal Enfields for mountain trails, and premium 7-seater family SUVs.
+        </p>
+</div>
+<!-- Feature 5 -->
+<div class="p-6 rounded-2xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-brand-orange-subtle text-primary-container flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[26px]">calendar_month</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Flexible Rentals</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+          Rent on your terms: convenient 4-hour slots, multi-day road trips, or flexible 30-day extended city subscription packages.
+        </p>
+</div>
+<!-- Feature 6 -->
+<div class="p-6 rounded-2xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-on-surface flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[26px]">offline_pin</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Instant Booking Pass</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+          Digital confirmation vouchers sent straight to WhatsApp and SMS with directions to your verified pickup hub.
+        </p>
+</div>
+</div>
+</section>
+<!-- 6. MARKETPLACE EXPLANATION PIPELINE -->
+<section class="w-full bg-surface-container-low py-20 lg:py-24">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-primary">The Architecture</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold tracking-tight mt-1">
+          One Platform. Thousands of Rides.
+        </h2>
+<p class="font-body-md text-body-md text-text-muted mt-3">
+          GONGO is pure mobility infrastructure connecting verified regional operators with modern consumers.
+        </p>
+</div>
+<!-- Pipeline Diagram Layout -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-center mb-12">
+<div class="p-5 rounded-2xl bg-surface-pure shadow-sm text-center flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary-container mb-3">
+<span class="material-symbols-outlined text-[22px]">storefront</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Verified Partner</p>
+<p class="text-xs text-text-muted mt-1">Local fleet operator joins network</p>
+</div>
+<div class="flex justify-center text-text-muted">
+<span class="material-symbols-outlined text-[28px] rotate-90 md:rotate-0 text-primary-container">arrow_forward</span>
+</div>
+<div class="p-5 rounded-2xl bg-surface-pure shadow-sm text-center flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-brand-orange-subtle flex items-center justify-center text-primary-container mb-3">
+<span class="material-symbols-outlined text-[22px]">cloud_sync</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface">GONGO Tech Engine</p>
+<p class="text-xs text-text-muted mt-1">Real-time availability &amp; rates</p>
+</div>
+<div class="flex justify-center text-text-muted">
+<span class="material-symbols-outlined text-[28px] rotate-90 md:rotate-0 text-primary-container">arrow_forward</span>
+</div>
+<div class="p-5 rounded-2xl bg-surface-pure shadow-sm text-center flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 mb-3">
+<span class="material-symbols-outlined text-[22px]">key</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Effortless Handover</p>
+<p class="text-xs text-text-muted mt-1">Rider picks up vehicle &amp; hits the road</p>
+</div>
+</div>
+<!-- Highlight Mission Box -->
+<div class="p-6 lg:p-8 rounded-3xl bg-surface-pure shadow-sm flex flex-col sm:flex-row items-center gap-6">
+<div class="w-14 h-14 rounded-2xl bg-brand-orange-subtle text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[32px]">shield_with_heart</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-1">Our Core Commitment</h4>
+<p class="font-body-md text-body-md text-text-muted">
+            GONGO does not own vehicles. We empower local mobility entrepreneurs through intelligent distribution software while protecting customer safety, verified roadworthiness, and fair pricing.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. FOR RENTAL PARTNERS (OBSIDIAN DARK SECTION #0B0B0B) -->
+<section class="w-full bg-[#0B0B0B] text-inverse-on-surface py-20 lg:py-28" id="partners">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+<!-- Left Side Copy & Benefits -->
+<div class="lg:col-span-6 flex flex-col items-start space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1F1F1F] text-brand-orange-hover font-label-sm text-label-sm font-semibold">
+            Partner Fleet Growth
+          </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-surface-pure font-extrabold tracking-tight">
+            Turn Your Vehicles Into More Bookings.
+          </h2>
+<p class="font-body-lg text-body-lg text-text-placeholder leading-relaxed">
+            Join the GONGO marketplace and access thousands of verified customers looking for their next bike or car rental. Maintain complete control of your fleet while we maximize your occupancy.
+          </p>
+<!-- Benefits List -->
+<div class="space-y-4 w-full pt-2">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-primary-container text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-surface-pure"><span class="font-bold">Set Your Own Rates:</span> Total autonomy over daily rates, peak holiday pricing, and minimum duration.</p>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-primary-container text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-surface-pure"><span class="font-bold">Automated Inventory:</span> Zero double-bookings. Manage pickups, returns, and service intervals seamlessly.</p>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-primary-container text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-surface-pure"><span class="font-bold">Rapid Payout Cycles:</span> Direct bank transfers with complete transparency on fees and bookings.</p>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-primary-container text-[20px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-md text-body-md text-surface-pure"><span class="font-bold">Verified Riders Only:</span> We verify Aadhaar &amp; Driving Licenses before any customer reaches your shop.</p>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary-container text-on-primary hover:bg-brand-orange-hover font-label-md text-label-md font-semibold transition-all shadow-md" href="#partner-form-section">
+<span>Join Partner Network</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+</div>
+</div>
+<!-- Right Side Showroom Imagery -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-[#1A1A1A]">
+<img class="w-full h-full object-cover" data-alt="A professional Indian showroom manager in a navy blazer welcoming customers in a high-tech modern automotive rental showroom with Royal Enfield bikes and clean white SUVs parked on polished concrete floor. Bright glass windows and organized desk counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdvbAm9LGGi0h1PQenb7tNRBGGDjFdHeP8lAqRXM94mAwvWx3kxIZkyhkhzW1OtE45C8QUnTMw3O8j78eKyBR1zWs6iPRc3e7_hd2080Knh0j2tnZYD-Gmt5dA0KCsLg27SOWDI7SY9JUQQXIhMGLsUuGlGEi5mJEKEQp1KGG5LOeDM1hJ1TLsglz_uS51iiExnAbEevzYl3Rw6Q6Wsojb1vlGLC1EhUM6GbiN7zeV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none"></div>
+<!-- Metric Floating Box -->
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl backdrop-blur-md bg-[#181818]/90 text-surface-pure flex items-center justify-between shadow-lg">
+<div>
+<p class="font-stat-display text-stat-display font-black text-primary-container leading-none">+38%</p>
+<p class="font-label-sm text-label-sm text-text-placeholder mt-1">Average Revenue Increase in First 60 Days</p>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-pure/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container text-[24px]">trending_up</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. BECOME A PARTNER ENQUIRY FORM -->
+<section class="w-full max-w-5xl mx-auto px-6 lg:px-12 py-20 lg:py-24" id="partner-form-section">
+  <div class="p-5 sm:p-8 lg:p-10 rounded-3xl bg-surface-pure shadow-lg">
+    <div class="max-w-2xl mx-auto text-center mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange-subtle text-primary font-label-sm text-label-sm font-semibold mb-2">
+        Fleet Onboarding Application
+      </div>
+      <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold tracking-tight">Become a GONGO Rental Partner</h2>
+      <p class="font-body-md text-body-md text-text-muted mt-2">Have bikes or cars available for rent? Join our verified marketplace and expand your daily fleet utilization.</p>
+    </div>
+    <iframe src="https://tally.so/r/4aX0Wb?transparentBackground=1" title="GONGO Rental Partner Onboarding Form" loading="lazy" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" style="border:0;border-radius:16px;background:transparent;" allow="camera; microphone; autoplay; encrypted-media;"></iframe>
+    <p class="text-center text-sm text-text-muted mt-3">Your details are submitted securely through Tally.</p>
+  </div>
+</section>
+<!-- 9. FRANCHISE EXPANSION SECTION & APPLICATION FORM -->
+<section class="w-full bg-surface-container-low py-20 lg:py-24" id="franchise">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Franchise Details Left -->
+<div class="lg:col-span-5 flex flex-col space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange-subtle text-primary font-label-sm text-label-sm font-semibold w-fit">
+            City Territory Opportunities
+          </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold tracking-tight">
+            Bring GONGO to Your City
+          </h2>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+            Lead the urban mobility transformation in your region. Become a GONGO Master Franchise Partner and establish the central marketplace hub for bikes and cars in your territory.
+          </p>
+<div class="space-y-4 pt-2">
+<div class="p-4 rounded-xl bg-surface-pure shadow-sm flex items-start gap-4">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_city</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Exclusive Territory Rights</h4>
+<p class="text-xs text-text-muted mt-0.5">Operate with regional exclusivity across tier-1, tier-2, or tourist hub districts.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-pure shadow-sm flex items-start gap-4">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">devices</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Turnkey Technology Suite</h4>
+<p class="text-xs text-text-muted mt-0.5">Partner dashboard, automated rider KYC verification, and local dispatch tools.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-pure shadow-sm flex items-start gap-4">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">campaign</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Brand Launch Playbook</h4>
+<p class="text-xs text-text-muted mt-0.5">National ad campaigns, partner acquisition blueprints, and ground support.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Franchise Form Right -->
+<div class="lg:col-span-7">
+<div class="p-8 lg:p-10 rounded-3xl bg-surface-pure shadow-md">
+<div class="mb-6">
+  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange-subtle text-primary font-label-sm text-label-sm font-semibold mb-2">
+    Territory Expansion Application
+  </div>
+  <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Franchise Application Form</h3>
+  <p class="font-body-sm text-body-sm text-text-muted mt-1">Complete your territory expansion enquiry to receive the confidential investment brochure.</p>
+</div>
+<iframe src="https://tally.so/r/4aXlXb?transparentBackground=1" title="GONGO Franchise Application Form" loading="lazy" width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0" style="border:0;border-radius:16px;background:transparent;" allow="camera; microphone; autoplay; encrypted-media;"></iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. ABOUT GONGO -->
+<section class="w-full max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-24" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+          About Our Mission
+        </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold tracking-tight">
+          Moving Cities, <br/>One Ride at a Time.
+        </h2>
+<p class="font-body-lg text-body-lg text-text-muted leading-relaxed">
+          GONGO is building India's most trusted decentralized marketplace for vehicle rentals, connecting daily commuters and explorers with independently verified vehicle owners through a friction-free digital experience.
+        </p>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+          Our goal is simple: make renting a high-performance motorcycle or comfortable car as predictable and easy as booking a flight or ordering a cab, with zero asset-heavy friction.
+        </p>
+<!-- Pillars -->
+<div class="grid grid-cols-3 gap-4 pt-4 text-center">
+<div class="p-4 rounded-2xl bg-surface-container-low">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary-container">100%</span>
+<p class="text-xs text-text-muted mt-1 font-semibold">KYC Verified</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">24/7</span>
+<p class="text-xs text-text-muted mt-1 font-semibold">Support Desk</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary-container">0₹</span>
+<p class="text-xs text-text-muted mt-1 font-semibold">Hidden Fees</p>
+</div>
+</div>
+</div>
+<!-- Feature Visual Collage -->
+<div class="lg:col-span-6 grid grid-cols-2 gap-4">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Two travellers packing luggage onto a touring motorcycle by sunrise along a national expressway with scenic landscape in Madhya Pradesh. Cinematic lighting, adventurous journey feeling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7RmrhPT8qhlkv5mv4yZEGSQ8XJG50GNNFGZ06z-buKQbrEnqQOKFtK3c5zUfa8RIudQ4a3D0OQm5MlpuF8iGtzQbrWtsXt0-FM9lA8DOPVwGcJWs2hoGvkAt1OoeLKBb0W5SfegqXtVmh5C7rlize70SWLetdiFFNTO26Re5ZsOwoUhuJxJNPD1GxIvFAPEE4N2UWHTPwMTvCIPi5ymmcoAIf6ZgjsVlhDwtddzTj"/>
+</div>
+<div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-md bg-surface-container mt-8">
+<img class="w-full h-full object-cover" data-alt="A clean top-tier vehicle rental hub interior with digital check-in screens, friendly staff in branded GONGO polos, and gleaming helmets organized on wall display." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbeKU_Ci-qKapWK-PUBF5nMZaQbGQcLtgMH7OIPLGsAHeLEOSvkuod7IyjYamq1eW9w1qCxPECyZVcWNjMmYtoFV-DNai7Wb89IapKwc9Ai2wqgYMdXi19NaulIh2_1Y8ybwiZUnY5AL0_4M_mwSjcyvhKo0YDG2GBzpsrs1jnspbr3M3GGljH0xjpbmDiwwz23fRnZW7ghuBhFOQtPcfMrneM6cDmcdwRCZonygY0"/>
+</div>
+</div>
+</div>
+<!-- Registered Business Information & Governance Entity -->
+<div class="mt-12 p-6 sm:p-8 lg:p-10 rounded-3xl bg-surface-pure border border-border-subtle shadow-md">
+  <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-border-subtle">
+    <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-2xl bg-brand-orange-subtle flex items-center justify-center text-primary-container shrink-0">
+        <span class="material-symbols-outlined text-[26px]">verified_user</span>
+      </div>
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary">
+          <span>Official Registration</span>
+          <span>•</span>
+          <span class="text-emerald-600 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>Verified Marketplace</span>
+        </div>
+        <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Registered Business &amp; Governance Entity</h3>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="px-3 py-1.5 rounded-xl bg-surface-container-low text-xs font-semibold text-on-surface">Platform: GONGO</span>
+      <span class="px-3 py-1.5 rounded-xl bg-brand-orange-subtle text-xs font-bold text-primary">Firm: BHARAT-MILK</span>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+    <!-- Business Firm -->
+    <div class="p-5 rounded-2xl bg-surface-container-low border border-border-subtle flex flex-col justify-between hover:border-primary/40 transition-colors">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-text-muted">Business Firm</span>
+        <div class="w-8 h-8 rounded-lg bg-surface-pure flex items-center justify-center text-primary-container shadow-xs">
+          <span class="material-symbols-outlined text-[18px]">domain</span>
+        </div>
+      </div>
+      <div>
+        <p class="font-headline-sm text-[20px] font-extrabold text-on-surface">BHARAT-MILK</p>
+        <p class="text-xs text-text-muted mt-1 font-medium">Operating Entity for GONGO</p>
+      </div>
+    </div>
+
+    <!-- Registered Mobile Number -->
+    <div class="p-5 rounded-2xl bg-surface-container-low border border-border-subtle flex flex-col justify-between hover:border-primary/40 transition-colors">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-text-muted">Registered Mobile</span>
+        <div class="w-8 h-8 rounded-lg bg-surface-pure flex items-center justify-center text-primary-container shadow-xs">
+          <span class="material-symbols-outlined text-[18px]">phone_android</span>
+        </div>
+      </div>
+      <div>
+        <a href="tel:+917898114878" class="font-headline-sm text-[20px] font-extrabold text-on-surface hover:text-primary-container transition-colors inline-block">+91 78981 14878</a>
+        <p class="text-xs text-text-muted mt-1 font-medium">Official Contact &amp; Hotline</p>
+      </div>
+    </div>
+
+    <!-- Registered Business Email -->
+    <div class="p-5 rounded-2xl bg-surface-container-low border border-border-subtle flex flex-col justify-between hover:border-primary/40 transition-colors">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-text-muted">Registered Email</span>
+        <div class="w-8 h-8 rounded-lg bg-surface-pure flex items-center justify-center text-primary-container shadow-xs">
+          <span class="material-symbols-outlined text-[18px]">mark_email_read</span>
+        </div>
+      </div>
+      <div>
+        <a href="mailto:gongorental@gmail.com" class="font-body-md font-bold text-on-surface hover:text-primary-container transition-colors break-all inline-block">gongorental@gmail.com</a>
+        <p class="text-xs text-text-muted mt-1 font-medium">Official Business Correspondence</p>
+      </div>
+    </div>
+
+    <!-- Customer Care Email -->
+    <div class="p-5 rounded-2xl bg-surface-container-low border border-border-subtle flex flex-col justify-between hover:border-primary/40 transition-colors">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-text-muted">Customer Care</span>
+        <div class="w-8 h-8 rounded-lg bg-surface-pure flex items-center justify-center text-primary-container shadow-xs">
+          <span class="material-symbols-outlined text-[18px]">support_agent</span>
+        </div>
+      </div>
+      <div>
+        <a href="mailto:info@gongobike.com" class="font-body-md font-bold text-on-surface hover:text-primary-container transition-colors break-all inline-block">info@gongobike.com</a>
+        <p class="text-xs text-text-muted mt-1 font-medium">Rider Support &amp; Bookings Desk</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6 pt-5 border-t border-border-subtle flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-text-muted">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary-container text-[18px]">shield</span>
+      <span>GONGO is managed by business firm <strong>BHARAT-MILK</strong>. Ashoka Garden, Bhopal, MP.</span>
+    </div>
+    <div class="flex items-center gap-3 shrink-0">
+      <a href="tel:+917898114878" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-semibold transition-colors">
+        <span class="material-symbols-outlined text-[16px]">call</span>
+        <span>Call Hotline</span>
+      </a>
+      <a href="mailto:info@gongobike.com" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-primary-container hover:bg-brand-orange-hover text-on-primary font-semibold transition-colors shadow-xs">
+        <span class="material-symbols-outlined text-[16px]">mail</span>
+        <span>Customer Care</span>
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+<!-- 11. CONTACT & HEADQUARTERS SECTION -->
+<section class="w-full bg-surface-container-low py-20 lg:py-24" id="contact">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center max-w-xl mx-auto mb-14">
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold tracking-tight">
+          Let's Connect
+        </h2>
+<p class="font-body-md text-body-md text-text-muted mt-2">
+          Have questions about rentals, fleet listing, or regional partnerships? Our headquarters team is here to assist.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<div class="lg:col-span-5 p-8 rounded-3xl bg-surface-pure shadow-sm flex flex-col justify-between space-y-6">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange-subtle text-primary font-label-sm text-label-sm font-semibold mb-2">
+  Headquarters &amp; Support
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">GONGO Mobility</h3>
+<p class="text-xs text-text-muted mt-0.5">Operated by Business Firm <strong class="text-on-surface font-semibold">BHARAT-MILK</strong></p>
+
+<div class="mt-6 space-y-4">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0 mt-0.5">
+  <span class="material-symbols-outlined text-[18px]">domain</span>
+</div>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Registered Business Firm</p>
+<p class="font-body-sm text-body-sm text-text-muted font-medium">BHARAT-MILK</p>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0 mt-0.5">
+  <span class="material-symbols-outlined text-[18px]">pin_drop</span>
+</div>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Registered Office</p>
+<p class="font-body-sm text-body-sm text-text-muted">Ashoka Garden, Bhopal, Madhya Pradesh, 462023, India</p>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-brand-orange-subtle flex items-center justify-center text-primary shrink-0 mt-0.5">
+  <span class="material-symbols-outlined text-[18px]">call</span>
+</div>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Registered Mobile / Hotline</p>
+<a href="tel:+917898114878" class="font-body-sm text-body-sm text-primary font-bold hover:underline transition-colors">+91 78981 14878</a>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-brand-orange-subtle flex items-center justify-center text-primary shrink-0 mt-0.5">
+  <span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Customer Care Email</p>
+<a href="mailto:info@gongobike.com" class="font-body-sm text-body-sm text-primary hover:underline font-medium transition-colors break-all">info@gongobike.com</a>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container shrink-0 mt-0.5">
+  <span class="material-symbols-outlined text-[18px]">mail</span>
+</div>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Registered Business Email</p>
+<a href="mailto:gongorental@gmail.com" class="font-body-sm text-body-sm text-primary hover:underline font-medium transition-colors break-all">gongorental@gmail.com</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Stylized Location Card with Direct Directions link -->
+<div class="w-full rounded-2xl overflow-hidden border border-border-subtle bg-surface-container-low p-4 flex flex-col justify-between">
+  <div class="flex items-center gap-3">
+    <div class="w-10 h-10 rounded-xl bg-surface-pure text-primary-container flex items-center justify-center shrink-0 shadow-xs">
+      <span class="material-symbols-outlined text-[20px]">location_on</span>
+    </div>
+    <div>
+      <p class="font-label-md text-label-md font-bold text-on-surface">Bhopal Hub &amp; Operations</p>
+      <p class="text-xs text-text-muted">Ashoka Garden, Bhopal, MP 462023</p>
+    </div>
+  </div>
+  <a href="https://maps.google.com/?q=Ashoka+Garden,+Bhopal,+Madhya+Pradesh+462023" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-surface-pure hover:bg-surface-container text-xs font-semibold text-on-surface border border-border-subtle transition-colors">
+    <span class="material-symbols-outlined text-[16px] text-primary-container">near_me</span>
+    <span>Get Directions on Google Maps</span>
+  </a>
+</div>
+
+<a class="w-full h-12 rounded-xl bg-primary-container hover:bg-brand-orange-hover text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-all shadow-md hover:-translate-y-0.5" href="tel:+917898114878">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+<span>Call Hotline (+91 78981 14878)</span>
+</a>
+</div>
+<!-- Right Side: Clean Contact Enquiry Form -->
+<div class="lg:col-span-7 p-8 lg:p-10 rounded-3xl bg-surface-pure shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-1">Send a Message</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-6">Fill in your inquiry and our support concierge will get back to you within 2 hours.</p>
+<form class="space-y-4" id="contact-general-form" onsubmit="handleContactSubmit(event)">
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1.5" for="c-name">Your Name *</label>
+<input class="w-full h-11 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-pure focus:ring-2 focus:ring-primary-container transition-all" id="c-name" placeholder="e.g. Priyanshu Patidar" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1.5" for="c-email">Email Address *</label>
+<input class="w-full h-11 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-pure focus:ring-2 focus:ring-primary-container transition-all" id="c-email" placeholder="you@domain.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1.5" for="c-phone">Phone Number</label>
+<input class="w-full h-11 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-pure focus:ring-2 focus:ring-primary-container transition-all" id="c-phone" placeholder="+91 90000 00000" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1.5" for="c-subject">Topic</label>
+<select class="w-full h-11 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-pure focus:ring-2 focus:ring-primary-container transition-all" id="c-subject">
+<option value="booking">Rider Booking &amp; Payments Assistance</option>
+<option value="partner">Partner Listing Questions</option>
+<option value="corporate">Corporate &amp; Bulk Bookings</option>
+<option value="other">General Feedback</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface mb-1.5" for="c-message">Message *</label>
+<textarea class="w-full p-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-pure focus:ring-2 focus:ring-primary-container transition-all" id="c-message" placeholder="How can we assist you today?" required="" rows="4"></textarea>
+</div>
+<button class="w-full h-12 rounded-xl bg-primary-container hover:bg-brand-orange-hover text-on-primary font-label-md text-label-md font-semibold transition-all shadow-md" type="submit">
+                Send Message
+              </button>
+<div class="hidden p-4 rounded-xl bg-emerald-50 text-emerald-800 flex items-center gap-3" id="contact-success-msg">
+<span class="material-symbols-outlined text-emerald-600 text-[24px]">send</span>
+<p class="font-label-md text-label-md font-semibold">Message delivered. We will respond promptly!</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+<!-- Floating Quick Assistance -->
+<aside aria-label="Quick Actions" class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2.5">
+  <a href="https://wa.me/917898114878?text=Hello%20GONGO,%20I%20need%20assistance%20regarding%20vehicle%20rental." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#25D366] text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all text-xs font-bold" title="WhatsApp Support">
+    <span class="material-symbols-outlined text-[19px]">chat</span>
+    <span class="hidden sm:inline">WhatsApp Help</span>
+  </a>
+  <a href="tel:+917898114878" class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-primary-container text-on-primary shadow-xl hover:shadow-2xl hover:scale-105 transition-all text-xs font-bold" title="Call Hotline">
+    <span class="material-symbols-outlined text-[19px]">phone_in_talk</span>
+    <span class="hidden sm:inline">+91 78981 14878</span>
+  </a>
+</aside>
+
+<!-- Modal: Portal Login Notice -->
+<div id="portal-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+  <div class="relative w-full max-w-md p-6 rounded-3xl bg-surface-pure shadow-2xl text-on-surface border border-border-subtle">
+    <button type="button" onclick="closeLoginModal()" class="absolute top-4 right-4 p-2 text-text-muted hover:text-on-surface rounded-full hover:bg-surface-container transition-colors">
+      <span class="material-symbols-outlined text-[20px]">close</span>
+    </button>
+    <div class="w-12 h-12 rounded-2xl bg-brand-orange-subtle flex items-center justify-center text-primary-container mb-4">
+      <span class="material-symbols-outlined text-[26px]">account_circle</span>
+    </div>
+    <h3 class="font-headline-sm text-headline-sm font-bold">Rider &amp; Partner Portal</h3>
+    <p class="font-body-sm text-body-sm text-text-muted mt-2">
+      Self-service account dashboard is rolling out shortly. To book rides or partner with us right away:
+    </p>
+    <div class="mt-4 p-4 rounded-xl bg-surface-container-low space-y-2 text-xs">
+      <p><strong class="text-on-surface">For Fleet Partners:</strong> Please fill the <a href="#partner-form-section" onclick="closeLoginModal()" class="text-primary font-semibold hover:underline">Onboarding Application</a> below.</p>
+      <p><strong class="text-on-surface">Customer Hotline:</strong> <a href="tel:+917898114878" class="text-primary font-bold hover:underline">+91 78981 14878</a></p>
+      <p><strong class="text-on-surface">Support Email:</strong> <a href="mailto:info@gongobike.com" class="text-primary font-semibold hover:underline">info@gongobike.com</a></p>
+    </div>
+    <div class="mt-6 flex gap-3">
+      <a href="#partner-form-section" onclick="closeLoginModal()" class="flex-1 py-2.5 text-center rounded-xl bg-primary-container text-on-primary font-semibold text-xs hover:bg-brand-orange-hover transition-colors">
+        Partner Form
+      </a>
+      <button type="button" onclick="closeLoginModal()" class="px-5 py-2.5 rounded-xl bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Terms of Service -->
+<div id="terms-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+  <div class="relative w-full max-w-lg p-6 sm:p-8 rounded-3xl bg-surface-pure shadow-2xl text-on-surface border border-border-subtle max-h-[85vh] overflow-y-auto">
+    <button type="button" onclick="closeTermsModal()" class="absolute top-4 right-4 p-2 text-text-muted hover:text-on-surface rounded-full hover:bg-surface-container transition-colors">
+      <span class="material-symbols-outlined text-[20px]">close</span>
+    </button>
+    <h3 class="font-headline-sm text-headline-sm font-bold mb-3">Terms &amp; Operational Policies</h3>
+    <div class="space-y-3 text-xs text-text-muted leading-relaxed">
+      <p><strong>1. Operating Entity:</strong> GONGO is a vehicle rental marketplace owned and operated by the business firm <strong>BHARAT-MILK</strong>, headquartered in Ashoka Garden, Bhopal, MP 462023.</p>
+      <p><strong>2. Marketplace Model:</strong> GONGO provides digital infrastructure connecting verified riders with independent vehicle rental partners. Vehicles are pre-inspected and audited for roadworthiness.</p>
+      <p><strong>3. Rider Requirements:</strong> Riders must possess a valid Indian Government Driving License and authentic Government ID (such as Aadhaar Card) for mandatory KYC verification before vehicle handover.</p>
+      <p><strong>4. Security Deposits &amp; Refunds:</strong> Refundable security deposits are handled transparently per partner listing criteria with prompt returns upon verified safe vehicle return.</p>
+      <p><strong>5. Support &amp; Enquiries:</strong> Reach our customer care team anytime at <a href="mailto:info@gongobike.com" class="text-primary underline">info@gongobike.com</a> or hotline <a href="tel:+917898114878" class="text-primary underline">+91 78981 14878</a>.</p>
+    </div>
+    <div class="mt-6 flex justify-end">
+      <button type="button" onclick="closeTermsModal()" class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-semibold text-xs hover:bg-brand-orange-hover transition-colors">
+        I Understand
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Privacy Policy -->
+<div id="privacy-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+  <div class="relative w-full max-w-lg p-6 sm:p-8 rounded-3xl bg-surface-pure shadow-2xl text-on-surface border border-border-subtle max-h-[85vh] overflow-y-auto">
+    <button type="button" onclick="closePrivacyModal()" class="absolute top-4 right-4 p-2 text-text-muted hover:text-on-surface rounded-full hover:bg-surface-container transition-colors">
+      <span class="material-symbols-outlined text-[20px]">close</span>
+    </button>
+    <h3 class="font-headline-sm text-headline-sm font-bold mb-3">Privacy &amp; Data Security</h3>
+    <div class="space-y-3 text-xs text-text-muted leading-relaxed">
+      <p><strong>1. Data Confidentiality:</strong> GONGO (BHARAT-MILK) respects user privacy. Personal identification and driving license details are strictly used for verified rental facilitation and legal compliance.</p>
+      <p><strong>2. Encrypted Handling:</strong> Booking data, identity proofs, and payment credentials are encrypted using bank-grade protocols.</p>
+      <p><strong>3. No Third-party Selling:</strong> We do not sell or monetize personal customer details to external advertising networks.</p>
+      <p><strong>4. Grievance &amp; Contact:</strong> For privacy requests or questions, please email <a href="mailto:gongorental@gmail.com" class="text-primary underline">gongorental@gmail.com</a>.</p>
+    </div>
+    <div class="mt-6 flex justify-end">
+      <button type="button" onclick="closePrivacyModal()" class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-semibold text-xs hover:bg-brand-orange-hover transition-colors">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="w-full bg-[#0B0B0B] text-inverse-on-surface pt-16 pb-12 border-t border-[#1E1E1E]">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 pb-12 border-b border-[#1E1E1E]">
+      <!-- Brand & Entity Profile Column -->
+      <div class="lg:col-span-2 space-y-4">
+        <div class="flex items-center gap-3">
+          <img alt="GONGO Brand Wordmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vbo8UqrzU84KueIKggp0dCIotkrMNDJsIcsgl3fU_zCHBg5cRKFqQ5b8NAE_52o_J-BE9R-vzcnL4sl4rIkX_CGuUwLegMPWFhE_xGzJMWiM2MgjEjddqAlV2v7pD4owUOdZ-WCc3MVLI8WHPSvq-gTnQqkx5ihhCfYccaK0dg0b_FxVBk0i6Jou7B91bdhZ2ma2_qs9AtTj6vQckPwBxWzouF-uFmZjK2wVPpQhot"/>
+          <span class="font-headline-sm text-headline-sm text-surface-pure font-bold tracking-tight">GONGO</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-text-placeholder max-w-sm">
+          A trusted marketplace connecting riders with verified vehicle rental partners across prime urban zones and travel corridors.
+        </p>
+
+        <!-- Business Entity Transparency Block -->
+        <div class="p-4 rounded-2xl bg-[#141414] border border-[#222] space-y-2 text-xs">
+          <div class="flex items-center justify-between">
+            <span class="text-text-placeholder">Business Firm:</span>
+            <span class="font-bold text-surface-pure">BHARAT-MILK</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-text-placeholder">Registered Mobile:</span>
+            <a href="tel:+917898114878" class="font-bold text-brand-orange-hover hover:underline">+91 78981 14878</a>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-text-placeholder">Customer Care:</span>
+            <a href="mailto:info@gongobike.com" class="font-semibold text-brand-orange-hover hover:underline">info@gongobike.com</a>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-text-placeholder">Business Email:</span>
+            <a href="mailto:gongorental@gmail.com" class="font-semibold text-brand-orange-hover hover:underline">gongorental@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="pt-1 flex items-center gap-2">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#181818] border border-[#282828] text-xs font-medium text-surface-pure">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>Verified India Marketplace
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Nav: Company -->
+      <div class="space-y-3">
+        <h3 class="font-label-md text-label-md text-surface-pure font-semibold uppercase tracking-wider">Company</h3>
+        <ul class="space-y-2.5">
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="#about">About Us</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="#how-it-works">How It Works</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="#why-gongo">Why GONGO</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="#contact">Contact Desk</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Nav: Fleet & Partners -->
+      <div class="space-y-3">
+        <h3 class="font-label-md text-label-md text-surface-pure font-semibold uppercase tracking-wider">Partners</h3>
+        <ul class="space-y-2.5">
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="#partner-form-section">Become a Partner</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="#partners">Partner Benefits</a></li>
+          <li class="font-body-sm text-body-sm"><button type="button" onclick="openLoginModal()" class="text-text-placeholder hover:text-surface-pure transition-colors text-left">Partner Login</button></li>
+        </ul>
+      </div>
+
+      <!-- Quick Nav: Franchise Expansion -->
+      <div class="space-y-3">
+        <h3 class="font-label-md text-label-md text-surface-pure font-semibold uppercase tracking-wider">Franchise</h3>
+        <ul class="space-y-2.5">
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="#franchise">Franchise Program</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="#franchise">Territory Rights</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="#franchise">Franchise Enquiry</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Nav: Support & Legal -->
+      <div class="space-y-3">
+        <h3 class="font-label-md text-label-md text-surface-pure font-semibold uppercase tracking-wider">Support</h3>
+        <ul class="space-y-2.5">
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="#contact">Help &amp; Support Hub</a></li>
+          <li class="font-body-sm text-body-sm"><a class="text-text-placeholder hover:text-surface-pure transition-colors" href="tel:+917898114878">Call Hotline</a></li>
+          <li class="font-body-sm text-body-sm"><button type="button" onclick="openTermsModal()" class="text-text-placeholder hover:text-surface-pure transition-colors text-left">Terms of Service</button></li>
+          <li class="font-body-sm text-body-sm"><button type="button" onclick="openPrivacyModal()" class="text-text-placeholder hover:text-surface-pure transition-colors text-left">Privacy Policy</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-center sm:text-left">
+        <p class="font-body-sm text-body-sm text-text-muted">© 2026 GONGO. All rights reserved.</p>
+        <p class="text-xs text-[#666]">Operated by business firm <strong>BHARAT-MILK</strong></p>
+      </div>
+      <div class="flex items-center gap-4">
+        <a aria-label="Verified Regional Network" class="text-text-muted hover:text-surface-pure transition-colors" href="#about" title="Verified Network"><span class="material-symbols-outlined text-[20px]">verified</span></a>
+        <a aria-label="Support Communications" class="text-text-muted hover:text-surface-pure transition-colors" href="#contact" title="Support Concierge"><span class="material-symbols-outlined text-[20px]">headset_mic</span></a>
+        <a aria-label="WhatsApp Helpline" class="text-text-muted hover:text-emerald-400 transition-colors" href="https://wa.me/917898114878" target="_blank" rel="noopener noreferrer" title="WhatsApp Helpline"><span class="material-symbols-outlined text-[20px]">chat</span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
